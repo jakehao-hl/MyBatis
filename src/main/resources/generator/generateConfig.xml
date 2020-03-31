@@ -45,6 +45,7 @@
         <table tableName="Person" domainObjectName="Person"
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false">
+            <!--驼峰-->
             <property name="useActualColumnNames" value="true"/>
         </table>
     </context>
