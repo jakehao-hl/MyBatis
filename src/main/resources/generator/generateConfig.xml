@@ -4,7 +4,7 @@
 <generatorConfiguration>
     <!-- 配置文件 -->
     <properties resource="jdbc.properties"/>
-    <classPathEntry location="${driverClassLocation}"/>
+    <classPathEntry location="${jdbc.driverClassLocation}"/>
     <context id="mysqlTables" targetRuntime="MyBatis3">
         <!-- 生成的pojo，将implements Serializable-->
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>
@@ -43,8 +43,8 @@
         </javaClientGenerator>
         <!-- 列出要生成代码的所有表，这里配置的是不生成Example文件 -->
         <table tableName="Person" domainObjectName="Person"
-               enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true"
-               enableSelectByExample="true" selectByExampleQueryId="true">
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false">
             <property name="useActualColumnNames" value="true"/>
         </table>
     </context>

@@ -1,11 +1,15 @@
 package com.cn.pojo;
 
-public class Person {
+import java.io.Serializable;
+
+public class Person implements Serializable {
     private Integer id;
 
     private String name;
 
     private Integer age;
+
+    private static final long serialVersionUID = 1L;
 
     public Integer getId() {
         return id;
@@ -20,7 +24,7 @@ public class Person {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public Integer getAge() {
