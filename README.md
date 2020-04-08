@@ -1,1 +1,1 @@
-# MyBatis
+# MyBatis ORM框架
