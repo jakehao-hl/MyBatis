@@ -1,4 +1,3 @@
-import com.cn.pojo.Person;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -19,9 +18,9 @@ public class Test {
         //创建SqlSession
         SqlSession sqlSession=sqlSessionFactory.openSession();
         Person person=new Person();
-        person.setId(1);
-        person.setName("xxx");
-        person.setAge(20);
+        person.setId(2);
+        person.setName("yyy");
+        person.setAge(30);
         sqlSession.insert("com.cn.dao.PersonMapper.insert",person);
         sqlSession.commit();
         System.out.println(person.getId());

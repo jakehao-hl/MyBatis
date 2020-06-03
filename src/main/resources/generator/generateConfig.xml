@@ -4,7 +4,7 @@
 <generatorConfiguration>
     <!-- 配置文件 -->
     <properties resource="jdbc.properties"/>
-    <classPathEntry location="${jdbc.driverClassLocation}"/>
+<!--    <classPathEntry location="${jdbc.driverClassLocation}"/>-->
     <context id="mysqlTables" targetRuntime="MyBatis3">
         <!-- 生成的pojo，将implements Serializable-->
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>
